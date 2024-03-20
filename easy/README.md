@@ -1,6 +1,6 @@
 # Easy
 
-This folder contains a collection of easy-level competitive programming questions.
+This folder contains a collection of easy-level competitive programming questions that I solved.
 
 ## Folder Structure
 
