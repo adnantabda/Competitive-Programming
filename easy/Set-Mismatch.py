@@ -34,3 +34,28 @@ Constraints:
 
 
 """
+
+class Solution(object):
+    def findErrorNums(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        i = 0
+        mis_match = []
+        while i < len(nums):
+            correct_index = nums[i] - 1 
+            if nums[i] != nums[correct_index] :
+                nums[i] , nums[correct_index] = nums[correct_index] , nums[i]
+            else:
+                i +=1
+
+
+        for i in range(0 , len(nums)):
+            if nums[i] != i + 1:
+                mis_match.append(nums[i])
+                mis_match.append(i + 1)
+                return mis_match
+
+
+             
