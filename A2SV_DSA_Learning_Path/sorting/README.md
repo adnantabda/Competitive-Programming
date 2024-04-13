@@ -6,7 +6,7 @@
 
 - for a small collection, a complex sorting method may be more trouble than it worth. 
 
-operation that are used to analyze sorting algorithm
+operations that are used to analyze sorting algorithm
 1) compare two values to see which one is smaller, larger , comes first or last (compare values)
 
 2) when values are not in their correct position exchange them (total number of exchanges will be important for evaluating the overall efficiency of the algorithm)
