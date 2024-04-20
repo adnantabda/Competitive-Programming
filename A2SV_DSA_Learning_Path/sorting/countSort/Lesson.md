@@ -49,3 +49,30 @@ print("Sorted array:", sorted_arr)
 ```
 
 This implementation of counting sort has a time complexity of O(n + k), where n is the number of elements in the input array and k is the range of the input. However, it requires extra space for the counting array, making it less efficient for large ranges of input values.
+
+another code implementation
+
+```python
+
+def sorting(arr):
+
+
+    max_val = max(arr) + 1
+    frequency_array = [0] * max_val
+    for i in arr:
+            frequency_array[i] = frequency_array[i] + 1
+
+    index = 0
+    for i in range(0,len(arr)):
+          while frequency_array[i] > 0:
+                arr[index] = i
+                index+=1
+                frequency_array[i]-=1
+
+    return arr
+    
+
+print(sorting([1,3,3,4,2,3,4,5,9]))
+
+
+```
